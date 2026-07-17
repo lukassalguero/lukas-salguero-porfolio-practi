@@ -10,7 +10,7 @@ const titles = [
   "Project Management",
 ];
 
-const fullName = "ALESSANDRO SALGUERO";
+const fullName = "LUKAS SALGUERO";
 
 export default function Home() {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -43,7 +43,7 @@ export default function Home() {
       <div 
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{ 
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: `url("${backgroundImage}")`,
           backgroundPosition: "center center"
         }}
       />

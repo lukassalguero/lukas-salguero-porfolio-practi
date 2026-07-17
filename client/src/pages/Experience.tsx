@@ -10,16 +10,16 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 
 const quickStats = [
   { value: "3", label: "Roles", icon: Briefcase },
-  { value: "2+", label: "Years Experience", icon: Clock },
+  { value: "1+", label: "Years Experience", icon: Clock },
   { value: "3", label: "Industries", icon: Layers },
 ];
 
 const experiences = [
   {
     id: 1,
-    role: "Project Management Office",
+    role: "Project Management Intern",
     company: "Siemens Energy",
-    period: "June 2025 – Present",
+    period: "March 2026 – Current",
     current: true,
     icon: Briefcase,
     color: "text-purple-400",
@@ -34,9 +34,9 @@ const experiences = [
   },
   {
     id: 2,
-    role: "Sales Development Representative",
+    role: "Business Intelligence Intern",
     company: "Banco de Crédito del Perú (BCP)",
-    period: "January 2024 – May 2025",
+    period: "September 2025 – February 2026",
     icon: Building2,
     color: "text-blue-400",
     bgColor: "bg-blue-500/10",
@@ -52,7 +52,7 @@ const experiences = [
     id: 3,
     role: "Digital Solutions Consultant | Freelancer",
     company: "Self-Employed",
-    period: "June 2024 - April 2025",
+    period: "December 2025 - December 2026",
     icon: Code2,
     color: "text-green-400",
     bgColor: "bg-green-500/10",

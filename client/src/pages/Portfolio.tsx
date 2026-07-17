@@ -16,8 +16,8 @@ import {
 } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import madeEasyImage from "@assets/image_1768021374263.png";
-import bypImage from "@assets/image_1767853449347.png";
-import mirandaImage from "@assets/image_1767853503776.png";
+import acemImage from "@assets/WhatsApp Image 2026-07-17 at 3.03.48 PM.jpeg";
+import thalesImage from "@assets/WhatsApp Image 2026-07-17 at 3.11.29 PM.jpeg";
 import laMetaImage from "@assets/academia_la_meta_hero.png";
 
 const quickStats = [
@@ -77,9 +77,9 @@ const pipelineSteps = [
 const webProjects = [
   {
     id: 2,
-    name: "Academia_MadeEasy - WebSite",
+    name: "Academia_MadeEasy - WEBSITE",
     client: "Academia Made Easy",
-    date: "March 2025",
+    date: "December 2025",
     description: "A website developed for MadeEasy, an academy for engineering students at PUCP, focused on showcasing the courses offered and facilitating contact between students and instructors via a WhatsApp link.",
     tech: ["HTML", "CSS", "AI Tools"],
     image: madeEasyImage,
@@ -89,33 +89,33 @@ const webProjects = [
   },
   {
     id: 3,
-    name: "B&P_Abogados - WEBSITE",
-    client: "B&P Abogados",
-    date: "January 2025",
-    description: "Corporate website for B&P Abogados, a law firm specialized in education law, with extensive experience advising universities, institutes, and schools.",
-    tech: ["HTML", "CSS", "AI Tools"],
-    image: bypImage,
+    name: "Academia_ACEM - WEBSITE",
+    client: "Acem",
+    date: "September 2025",
+    description: "Landing page developed for a pre-university academy, designed to showcase its academic programs and teaching methodology. Features a direct contact channel to streamline student inquiries and lead generation.",
+    tech: ["HTML", "AI Tools"],
+    image: acemImage,
     hasDemo: false,
     hasLive: true,
-    liveUrl: "https://www.bypabogados.com/",
+    liveUrl: "https://acem.edu.pe/",
   },
   {
     id: 4,
-    name: "Miranda&Amado_Abogados - WEBSITE",
-    client: "Miranda&Amado_Abogados",
-    date: "October 2024",
-    description: "Institutional website for a Peruvian law firm, designed to convey credibility and professional excellence. The platform presents the firm's culture, expertise, and legal team through a clean and structured layout.",
-    tech: ["HTML", "CSS", "AI Tools"],
-    image: mirandaImage,
+    name: "Academia_Thales - WEBSITE",
+    client: "Academia PreUniversitaria Thales",
+    date: "July 2025",
+    description: "Responsive website with a clean, user-friendly interface, organizing educational content into a clear and engaging experience. Added student testimonials and contact features to improve usability and encourage inquiries.",
+    tech: ["HTML", "AI Tools"],
+    image: thalesImage,
     hasDemo: false,
     hasLive: true,
-    liveUrl: "https://mafirma.pe/es/firma",
+    liveUrl: "https://academiathales.com/",
   },
   {
     id: 5,
     name: "Academia_La_Meta - WEBSITE",
     client: "Academia La Meta",
-    date: "December 2024",
+    date: "May 2025",
     description: "Design and development of a web platform for Academia La Meta with a focus on user experience, performance, and conversion. The site allows students to learn about the academic offerings and communicate instantly through WhatsApp integration.",
     tech: ["HTML", "AI Tools"],
     image: laMetaImage,

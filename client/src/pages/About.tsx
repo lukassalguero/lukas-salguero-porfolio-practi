@@ -19,8 +19,8 @@ const technologies = [
 ];
 
 const stats = [
-  { value: "2+", label: "Year Professional Experience", icon: Briefcase },
-  { value: "7+", label: "Projects Completed", icon: Code },
+  { value: "1+", label: "Year Professional Experience", icon: Briefcase },
+  { value: "5+", label: "Projects Completed", icon: Code },
 ];
 
 const highlights = [
@@ -30,7 +30,7 @@ const highlights = [
     code: {
       university: "Pontificia Universidad Católica del Perú",
       city: "Lima, Peru",
-      year: "2020-2024",
+      year: "2022-2027",
       Degree: "Industrial Engineering",
     },
     title: "Academic Education",
@@ -119,7 +119,7 @@ export default function About() {
             <div className="rounded-lg overflow-hidden border border-border/50 bg-muted/20 shadow-xl shadow-black/30">
               <img
                 src={profileImage}
-                alt="Alessandro Salguero"
+                alt="Lukas Salguero"
                 className="w-full h-auto object-cover"
                 data-testid="img-profile"
               />
@@ -141,7 +141,7 @@ export default function About() {
 
             <Reveal className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                I'm <span className="text-foreground font-medium">Alessandro Salguero</span>, an{" "}
+                I'm <span className="text-foreground font-medium">Lukas Salguero</span>, an{" "}
                 <span className="text-primary">Industrial Engineer</span> focused on Project Management
                 and Sales & Business Operations.
               </p>
