@@ -5,7 +5,8 @@ import { Card } from "@/components/ui/card";
 import { Briefcase, Building2, Code2, Award, Clock, Layers, Camera, Sparkles, ArrowRight } from "lucide-react";
 import bcpTeamImage1 from "@assets/image_1767855533853.png";
 import bcpTeamImage2 from "@assets/image_1767890527899.png";
-import freelanceImage from "@assets/image_1767891188314.png";
+import thalesImage from "@assets/WhatsApp Image 2026-07-17 at 3.11.29 PM.jpeg";
+import acemImage from "@assets/WhatsApp Image 2026-07-17 at 3.03.48 PM.jpeg";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 
 const quickStats = [
@@ -61,7 +62,7 @@ const experiences = [
       "Managed a full business operation: First meeting with clients, identifying client needs, negotiating prices and finally the web development, ensuring the domain and hosting were set up correctly for a perfect launch.",
     ],
     skills: ["AI Tools", "Business Operations", "Client Management"],
-    teamImages: [freelanceImage],
+    teamImages: [thalesImage, acemImage],
     teamLabel: "Projects",
   },
 ];
