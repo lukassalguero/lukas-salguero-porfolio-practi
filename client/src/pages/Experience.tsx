@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Briefcase, Building2, Code2, Award, Clock, Layers, Camera, Sparkles, ArrowRight } from "lucide-react";
+import siemensImage from "@assets/siemensenergy.jfif";
 import bcpTeamImage1 from "@assets/image_1767855533853.png";
 import bcpTeamImage2 from "@assets/image_1767890527899.png";
 import thalesImage from "@assets/WhatsApp Image 2026-07-17 at 3.11.29 PM.jpeg";
@@ -31,11 +32,12 @@ const experiences = [
       "CRM & Pipeline execution: Managed account updates and project milestones in Salesforce while coordinating internal stakeholders during hardware/software deployments, and maintenance operations to ensure on-time execution.",
     ],
     skills: ["Project Execution", "B2B Sales", "Risk Management"],
-    pendingPhoto: true,
+    teamImages: [siemensImage],
+    teamLabel: "Job",
   },
   {
     id: 2,
-    role: "Business Intelligence Intern",
+    role: "Data Analytics Intern",
     company: "Banco de Crédito del Perú (BCP)",
     period: "September 2025 – February 2026",
     icon: Building2,
