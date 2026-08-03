@@ -55,7 +55,7 @@ const experiences = [
     id: 3,
     role: "Digital Solutions Consultant | Freelancer",
     company: "Self-Employed",
-    period: "December 2025 - December 2026",
+    period: "January 2025 – October 2025",
     icon: Code2,
     color: "text-green-400",
     bgColor: "bg-green-500/10",
