@@ -2,20 +2,20 @@ import { useState, useEffect, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Briefcase, Code, BarChart3, ChevronLeft, ChevronRight } from "lucide-react";
-import { SiPython, SiSalesforce, SiSlack, SiPostgresql } from "react-icons/si";
+import { CheckCircle, Briefcase, Code, BarChart3, ChevronLeft, ChevronRight, FileSpreadsheet, Workflow } from "lucide-react";
+import { SiPostgresql, SiSap } from "react-icons/si";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import profileImage from "@assets/FotoDePerfilNew_1767892057825.jpeg";
 import highlightImage1 from "@assets/WhatsApp_Image_2026-01-08_at_12.30.17_PM_(1)_1767893932207.jpeg";
-import highlightImage2 from "@assets/WhatsApp_Image_2026-01-08_at_12.44.08_PM_1767894301281.jpeg";
+import highlightImage2 from "@assets/FotoPersonal_Siemens.jpeg";
 import highlightImage3 from "@assets/image_1767897159767.png";
 
 const technologies = [
-  { name: "Python", icon: SiPython, color: "text-yellow-400" },
+  { name: "Excel", icon: FileSpreadsheet, color: "text-green-500" },
   { name: "SQL", icon: SiPostgresql, color: "text-blue-400" },
-  { name: "Salesforce", icon: SiSalesforce, color: "text-blue-400" },
   { name: "Power BI", icon: BarChart3, color: "text-yellow-500" },
-  { name: "Slack", icon: SiSlack, color: "text-purple-400" },
+  { name: "Power Automate", icon: Workflow, color: "text-indigo-400" },
+  { name: "SAP", icon: SiSap, color: "text-sky-400" },
 ];
 
 const stats = [
@@ -45,7 +45,7 @@ const highlights = [
     code: {
       company: "Siemens Energy",
       role: "Project Management Office",
-      year: "June 2025 – Present",
+      year: "March 2026 – August 2026",
       "Business Area": "Gas Services",
     },
     title: "Professional Experience",
@@ -159,12 +159,12 @@ export default function About() {
 
             <div>
               <h3 className="font-mono text-sm text-cyan-400 mb-4">{"// "}Technologies</h3>
-              <RevealGroup className="grid grid-cols-3 sm:grid-cols-5 gap-3">
+              <RevealGroup className="grid grid-cols-3 sm:grid-cols-5 gap-3 items-stretch">
                 {technologies.map((tech) => (
-                  <RevealItem key={tech.name}>
-                    <Card className="p-4 bg-card/50 border-border flex flex-col items-center gap-2 shadow-md shadow-black/20 hover:border-primary/40 hover:-translate-y-0.5 transition-all duration-300">
+                  <RevealItem key={tech.name} className="h-full">
+                    <Card className="h-full p-4 bg-card/50 border-border flex flex-col items-center justify-center gap-2 shadow-md shadow-black/20 hover:border-primary/40 hover:-translate-y-0.5 transition-all duration-300">
                       <tech.icon className={`w-7 h-7 ${tech.color}`} />
-                      <span className="text-xs text-muted-foreground">{tech.name}</span>
+                      <span className="text-xs text-muted-foreground text-center leading-tight">{tech.name}</span>
                     </Card>
                   </RevealItem>
                 ))}
