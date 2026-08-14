@@ -52,7 +52,7 @@ const experiences = [
   },
   {
     id: 3,
-    role: "Digital Solutions Consultant | Freelancer",
+    role: "AI-Powered Web Developer | Freelancer",
     company: "Self-Employed",
     period: "January 2025 – October 2025",
     icon: Code2,
