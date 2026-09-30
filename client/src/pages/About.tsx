@@ -2,12 +2,12 @@ import { useState, useEffect, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Briefcase, Code, BarChart3, ChevronLeft, ChevronRight, FileSpreadsheet, Workflow } from "lucide-react";
+import { CheckCircle, BarChart3, ChevronLeft, ChevronRight, FileSpreadsheet, Workflow } from "lucide-react";
 import { SiPostgresql, SiSap } from "react-icons/si";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import profileImage from "@assets/FotoDePerfilNew_1767892057825.jpeg";
 import highlightImage1 from "@assets/WhatsApp_Image_2026-01-08_at_12.30.17_PM_(1)_1767893932207.jpeg";
-import highlightImage2 from "@assets/FotoPersonal_Siemens.jpeg";
+import highlightImage2 from "@assets/SiemensPic.jpeg";
 import highlightImage3 from "@assets/image_1767897159767.png";
 
 const technologies = [
@@ -16,11 +16,6 @@ const technologies = [
   { name: "Power BI", icon: BarChart3, color: "text-yellow-500" },
   { name: "Power Automate", icon: Workflow, color: "text-indigo-400" },
   { name: "SAP", icon: SiSap, color: "text-sky-400" },
-];
-
-const stats = [
-  { value: "1+", label: "Year Professional Experience", icon: Briefcase },
-  { value: "5+", label: "Projects Completed", icon: Code },
 ];
 
 const highlights = [
@@ -52,6 +47,8 @@ const highlights = [
     description: "Supporting major gas-turbine maintenance (outages) for clients such as ENGIE, Kallpa, Orygen, and Termochilca. Involved in solution architecture, client sales opportunities, and end-to-end project ownership: From planning and execution to service closeout.",
     tags: ["Project Mgmt", "Sales", "Solution Architect"],
     image: highlightImage2,
+    // Portrait photo: crop to match the near-square ratio of the other highlights
+    imageStyle: { aspectRatio: "1100 / 1161", height: "auto", objectFit: "cover", objectPosition: "center 40%" } as React.CSSProperties,
     command: "./view_career.sh",
   },
   {
@@ -114,7 +111,7 @@ export default function About() {
   return (
     <div className="min-h-[calc(100vh-100px)] py-12 px-4">
       <div className="max-w-5xl mx-auto">
-        <div className="grid lg:grid-cols-[300px_1fr] gap-14 items-start mb-20">
+        <div className="grid lg:grid-cols-[300px_1fr] gap-14 items-start mb-10">
           <Reveal className="space-y-4">
             <div className="rounded-lg overflow-hidden border border-border/50 bg-muted/20 shadow-xl shadow-black/30">
               <img
@@ -166,18 +163,6 @@ export default function About() {
                       <tech.icon className={`w-7 h-7 ${tech.color}`} />
                       <span className="text-xs text-muted-foreground text-center leading-tight">{tech.name}</span>
                     </Card>
-                  </RevealItem>
-                ))}
-              </RevealGroup>
-            </div>
-
-            <div>
-              <h3 className="font-mono text-sm text-cyan-400 mb-4">{"// "}In Numbers</h3>
-              <RevealGroup className="grid grid-cols-2 gap-6 max-w-sm">
-                {stats.map((stat) => (
-                  <RevealItem key={stat.label}>
-                    <p className="text-3xl font-bold text-primary">{stat.value}</p>
-                    <p className="text-xs text-muted-foreground">{stat.label}</p>
                   </RevealItem>
                 ))}
               </RevealGroup>
@@ -258,7 +243,7 @@ export default function About() {
                         src={highlight.image}
                         alt={highlight.title}
                         className="w-full h-full object-contain object-center"
-                        style={{ minHeight: '320px' }}
+                        style={{ minHeight: '320px', ...("imageStyle" in highlight ? highlight.imageStyle : {}) }}
                         data-testid={`img-highlight-${highlight.id}`}
                       />
                     </div>
