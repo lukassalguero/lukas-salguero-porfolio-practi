@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 import backgroundImage from "@assets/WhatsApp_Image_2026-01-09_at_2.38.20_PM_1767987531002.jpeg";
 
 const titles = [
-  "Data Infrastructure & Analytics",
-  "Product & Solution Strategy",
-  "Project Management",
+  "Product Management",
+  "Product Strategy & Roadmapping",
+  "Agile & Product Execution",
 ];
 
 const fullName = "LUKAS SALGUERO";

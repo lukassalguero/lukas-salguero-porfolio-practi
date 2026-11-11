@@ -2,8 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, BarChart3, ChevronLeft, ChevronRight, FileSpreadsheet, Workflow } from "lucide-react";
-import { SiPostgresql, SiSap } from "react-icons/si";
+import { CheckCircle, BarChart3, ChevronLeft, ChevronRight } from "lucide-react";
+import { SiPostgresql, SiJira, SiFigma, SiClaude } from "react-icons/si";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import profileImage from "@assets/FotoDePerfilNew_1767892057825.jpeg";
 import highlightImage1 from "@assets/WhatsApp_Image_2026-01-08_at_12.30.17_PM_(1)_1767893932207.jpeg";
@@ -11,11 +11,11 @@ import highlightImage2 from "@assets/SiemensPic.jpeg";
 import highlightImage3 from "@assets/image_1767897159767.png";
 
 const technologies = [
-  { name: "Excel", icon: FileSpreadsheet, color: "text-green-500" },
+  { name: "Jira", icon: SiJira, color: "text-blue-500" },
+  { name: "Figma", icon: SiFigma, color: "text-pink-400" },
   { name: "SQL", icon: SiPostgresql, color: "text-blue-400" },
   { name: "Power BI", icon: BarChart3, color: "text-yellow-500" },
-  { name: "Power Automate", icon: Workflow, color: "text-indigo-400" },
-  { name: "SAP", icon: SiSap, color: "text-sky-400" },
+  { name: "AI Workflows", icon: SiClaude, color: "text-orange-400" },
 ];
 
 const highlights = [
@@ -25,7 +25,7 @@ const highlights = [
     code: {
       university: "Pontificia Universidad Católica del Perú",
       city: "Lima, Peru",
-      year: "2022-2027",
+      year: "2022-2026",
       Degree: "Industrial Engineering",
     },
     title: "Academic Education",
@@ -39,8 +39,8 @@ const highlights = [
     category: "Current Job Position",
     code: {
       company: "Siemens Energy",
-      role: "Project Management Office",
-      year: "March 2026 – August 2026",
+      role: "Project Management Intern",
+      year: "March 2026 – November 2026",
       "Business Area": "Gas Services",
     },
     title: "Professional Experience",
@@ -139,18 +139,19 @@ export default function About() {
             <Reveal className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
                 I'm <span className="text-foreground font-medium">Lukas Salguero</span>, an{" "}
-                <span className="text-primary">Industrial Engineer</span> focused on Project Management
-                and Sales & Business Operations.
+                <span className="text-primary">Industrial Engineer</span> focused on Product Management
+                and Data & Analytics.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I like bringing structure to complex work: Aligning teams, keeping priorities clear, and
-                making sure projects move forward and deliver real results. I like to understand how things
-                really work before acting, so the solutions I build are practical and actually stick.
+                I like bringing structure to complex work: aligning teams, keeping priorities clear, and
+                making sure the right product decisions move forward and deliver real results. I enjoy
+                working at the intersection of technology and business, understanding how things really
+                work before acting, so the solutions I build are practical and actually stick.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 I'm looking to join international companies operating in{" "}
                 <span className="text-cyan-400">LATAM</span>, where I can take ownership early, learn
-                quickly, and support teams across project management, sales, and strategy.
+                quickly, and support teams across product, data, and strategy.
               </p>
             </Reveal>
 
